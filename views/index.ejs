@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <h1>Check the Current Weather</h1>
+  <form action="/weather" method="POST">
+
+    <h1> hi welcome to my APP </h1>
+    <p>you can see the Indain all states weather here...</p>
+
+    <button type="submit">click the buuton to see the weather</button>
+  </form>
+
+
+  <% if (weather) { %>
+    <h2><%= weather %></h2>
+<% } %>
+
+<% if (error) { %>
+    <h2 style="color: black;"><%= error %></h2>
+<% } %>
+  
+   
+
+</body>
+</html>

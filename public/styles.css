@@ -1,0 +1,43 @@
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Titan One", cursive;
+    margin-bottom: 20px;
+  }
+
+  body {
+    min-height: 100vh;
+    background-image: url("./image/pexels-pixabay-209831.jpg");
+    display: grid;
+    align-items: top;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+.button{
+  background: linear-gradient(45deg, #f06, #f90); /* Gradient background */
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reset the shadow when clicked */
+}
